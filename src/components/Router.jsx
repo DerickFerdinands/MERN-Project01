@@ -1,6 +1,6 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import {CreateAccount} from "./CreateAccount";
-import {Login} from "./Login";
+import {CreateAccount} from "./signup/CreateAccount";
+import {Login} from "./login/Login";
 
 export const Router = ()=>{
     return  <>

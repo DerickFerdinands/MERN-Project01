@@ -1,9 +1,9 @@
-import {Button, Checkbox, Container, Divider, FormControlLabel, Grid, Stack, Typography} from "@mui/material";
-import {TextFields} from "./TextFields";
-import MyImage from "../assets/images/pexels-amina-filkins-5409662.jpg";
+import {Button, Container, Divider, Grid, Stack, Typography} from "@mui/material";
+import {TextFields} from "../TextFields";
+import MyImage from "../../assets/images/pexels-amina-filkins-5409662.jpg";
 import {Link} from "react-router-dom";
 
-export const Login = ()=>{
+export const Login = () => {
     return <>
         <Container sx={{
             display: 'flex',
@@ -19,7 +19,12 @@ export const Login = ()=>{
                 <Grid justifyContent={'center'} alignItems={'center'} width={'100%'} display={'flex'} item xs={6}
                       sx={{height: '100vh', bgcolor: '#FFFFFF'}}>
                     <Stack width={'100%'} alignItems={"center"} gap={2}>
-                        <Typography marginTop={3} sx={{fontFamily: 'Poppins', fontWeight: '500'}} variant={'h4'}>Hi.. Welcome Back  :)</Typography>
+                        <Typography
+                            marginTop={3}
+                            sx={{fontFamily: 'Poppins', fontWeight: '500'}}
+                            variant={'h4'}>
+                            Hi.. Welcome Back :)
+                        </Typography>
 
                         <Button variant={"outlined"} sx={{
                             marginTop: '2vh',
@@ -30,9 +35,12 @@ export const Login = ()=>{
                             borderColor: '#bdbaba',
                             width: '60%',
                             height: '5vh'
-                        }}><img style={{height: '15px', marginRight: '10px'}}
+                        }}>
+                            <img
+                                style={{height: '15px', marginRight: '10px'}}
                                 src={'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/706px-Google_%22G%22_Logo.svg.png'}
-                                alt={''}/>Login With Google</Button>
+                                alt={''}
+                            />Login With Google</Button>
                         <Container sx={{
                             display: 'flex',
                             alignItems: 'center',
@@ -47,7 +55,7 @@ export const Login = ()=>{
                             <Divider sx={{width: '35%'}}/>
                         </Container>
                         <Stack marginBottom={1} sx={{gap: '20px', width: '65%', marginTop: '2vh'}}>
-                            <TextFields fields={[ {
+                            <TextFields fields={[{
                                 lblText: "Email",
                                 placeholder: "Enter Your Email"
                             }, {lblText: "Password", placeholder: "Enter Your Password"}]}/>
@@ -67,7 +75,10 @@ export const Login = ()=>{
                             }}>Log in</Button>
                             <Typography sx={{fontFamily: 'Poppins', display: 'flex', marginLeft: '1vw'}}
                                         variant={'h7'}>Don't have an account?
-                                <Link to={"/"}><span style={{color: 'green', marginLeft: '.5vw'}}>Create an account</span></Link></Typography>
+                                <Link to={"/"}><span style={{
+                                    color: 'green',
+                                    marginLeft: '.5vw'
+                                }}>Create an account</span></Link></Typography>
                         </Stack>
 
                     </Stack>

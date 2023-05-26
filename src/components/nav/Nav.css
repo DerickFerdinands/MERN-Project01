@@ -1,0 +1,17 @@
+*{
+    font-family: 'Poppins', cursive !important;
+}
+
+.appBarText{
+    font-weight: 500 !important;
+}
+
+.header{
+    margin-top: 2vh;
+}
+
+.search{
+    border:1px solid black;
+    border-radius: 20px;
+    width: 5vw;
+}

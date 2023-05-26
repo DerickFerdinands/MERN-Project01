@@ -1,6 +1,6 @@
 import {Button, Checkbox, Container, Divider, FormControlLabel, Grid, Stack, Typography} from "@mui/material";
-import {TextFields} from "./TextFields";
-import MyImage from "../assets/images/pexels-gabriela-guerino-1839904.jpg";
+import {TextFields} from "../TextFields";
+import MyImage from "../../assets/images/pexels-gabriela-guerino-1839904.jpg";
 import {Link,useNavigate} from "react-router-dom";
 import {useState} from "react";
 
