@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button, Checkbox, Container, CssBaseline, Divider, FormControlLabel, Grid, Stack, Typography} from "@mui/material";
+import {TextFields} from "./components/TextFields";
+import MyImage from './assets/images/pexels-gabriela-guerino-1839904.jpg';
+import {Router} from "./components/Router";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (<>
+            <CssBaseline/>
+            <Router/>
+        </>
+    );
 }
 
 export default App;
